@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: rgb(0, 128, 107);
+}
+.wrapper{
+    max-height: 80vh;
+    max-width: 100vw;
+    background-color: teal;
+}
+#navbar{
+    /* padding: 0 20px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 11vh;
+    width: 100%;
+    background-color: #180325;
+}
+h2{
+    font-size: 22px;
+}
+.left{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 20px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 30%;
+    /* background: #652020; */
+}
+.right{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 50%;
+    /* background: #180325; */
+}
+.right>ul{
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    gap: 30px;
+}
+li:hover{
+    color: bisque;
+    text-decoration: underline;
+}#login:hover{
+    background: rgb(209, 80, 57);
+    color: #fff;
+    text-decoration: none;
+}
+ul li{
+    transition: all 0.2s;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+}
+
+.menudiv{
+    display: none;
+    padding: 0px 30px;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    display: none;
+    color: #fff;
+    height: 100%;
+    width: calc(100% - 80%);
+    /* background-color: blueviolet; */
+}
+#login{
+    text-align: center;
+    font-weight: 500;
+    border-radius: 5px;
+    background-color: tomato;
+    color: #ffffff;
+    padding: 6px 12px;
+}
+@media screen and (max-width : 830px) {
+    .menudiv{
+        display: flex;
+    }
+    .right{
+        display: none;
+    }
+    .left{
+        font-size: 15px;
+    }
+}
