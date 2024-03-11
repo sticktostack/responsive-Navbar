@@ -138,3 +138,9 @@ ul li{
         width: 100%;
     }
 }
+@media screen and (min-width: 830px) {
+    .responsivenav{
+        display: none;
+    }
+    
+}
